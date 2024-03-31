@@ -1,0 +1,46 @@
+
+.r-container{
+    overflow: hidden;
+}
+.r-head {
+  
+  margin-bottom: 2rem;
+  margin-left: 110px;
+  /* text-align: center; */
+  justify-content: center;
+}
+
+.r-card {
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: auto;
+  transition: all 300ms ease-in;
+  /* color: white; */
+  /* background-color: black; */
+}
+
+.r-card > img {
+  width: 100%;
+  height: 70%;
+}
+
+.r-card:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(237, 26, 26, 0) 0%,
+    rgba(204, 174, 174, 0) 0%,
+    
+  );
+
+  box-shadow: 0px 72px 49px -51px rgba(113, 137, 234, 0.61);
+}
+
+.swiper-horizontal{
+    overflow: visible;
+    /* margin-left: 110px; */
+}
+
