@@ -1,0 +1,25 @@
+
+.g-wrapper{
+    margin-top: 1.5rem;
+}
+.g-container{
+    color: white;
+}
+.inner-container{
+
+    gap: 1.5rem;
+    background: rgb(61, 61, 213);
+    padding: 2rem;
+    text-align: center;
+    width: 82%;
+    margin-left: 10%;
+    border-radius: 12px;
+}
+
+.inner-container .primaryText{
+    color: white;
+}
+
+.inner-container .secondaryText{
+    color: white;
+}
