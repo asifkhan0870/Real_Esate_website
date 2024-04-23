@@ -1,48 +1,51 @@
-
-.v-container>div{
-   flex:1;
+.v-container > div {
+  flex: 1;
 }
 
-.v-left{
-      
-    margin-left: 70px;
+.v-left {
+  margin-left: 70px;
 }
 
-
-
-
-.v-right{
-    gap: 0.5rem;
-    margin-right: 52px;
+.v-right {
+  gap: 0.5rem;
+  margin-right: 52px;
 }
 
-.accordion{
-    margin-top: 2rem;
-    border: none;
-
+.accordion {
+  margin-top: 2rem;
+  border: none;
 }
 
-.accordionItem{
-
-    background-color: white;
-    border: 1px solid rgb(213, 213, 231);
-    border-radius: 12px;
-    /* overflow: hidden ; */
-    margin-bottom: 0.5rem;
-
+.accordionItem {
+  background-color: white;
+  border: 1px solid rgb(213, 213, 231);
+  border-radius: 12px;
+  /* overflow: hidden ; */
+  margin-bottom: 0.5rem;
 }
 
-.accordion-btn{
-    background-color: white;
-    padding: 1rem;
+.accordion-btn {
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-btn .icon {
+  color: blue;
+}
+
+@media (max-width: 600px) {
+  .v-left {
+    margin-left: 200px;
+  }
+  .image-container > img {
+    height: 90%;
     width: 100%;
-    justify-content: space-between;
-   cursor: pointer;
+  }
+
+  .v-right {
+    margin-left: 35px;
+  }
 }
-
-.accordion-btn  .icon{
-      color: blue;
-}
-
-
-
