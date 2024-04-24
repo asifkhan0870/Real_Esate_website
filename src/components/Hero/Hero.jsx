@@ -3,6 +3,8 @@ import { IoLocation } from "react-icons/io5";
 import CountUp from "react-countup";
 import "./Hero.css";
 
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <section className="hero-wrapper">
@@ -10,19 +12,25 @@ const Hero = () => {
         <div className="flexColStart hero-left">
           <div className="hero-title">
             <div className="orange-circle" />
-            <h1>
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 2, type: "spring" }}
+            >
               Discover <br />
               Most Suitable <br />
               Property
-            </h1>
+            </motion.h1>
           </div>
 
           <div className="flexColStart hero-destination">
             <span className="secondaryText">
               Find a variety of products that suit to you with very low price.
             </span>
-                
-            <span className="secondaryText">forgate all difficulties in finding residence for you </span>
+
+            <span className="secondaryText">
+              forgate all difficulties in finding residence for you{" "}
+            </span>
           </div>
 
           <div className="flexCenter search-bar">
@@ -59,9 +67,14 @@ const Hero = () => {
         </div>
 
         <div className="flexCenter hero-right">
-          <div className="image-container">
+          <motion.div
+            initial={{ x: "2rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 2, type: "spring" }}
+            className="image-container"
+          >
             <img src="./hero-image.png" alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
